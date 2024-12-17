@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <img class="menu" src="/menu.svg" alt="">
+        <div class="sidebar slide">
+           <a href="index.html"> <div class=" flex stopwatch option ">
+                <img class="icon" src="/stopwatch-svgrepo-com.svg" alt="">Stopwatch
+            </div></a>
+            <a href="timmer.html"><div class=" flex timmer option selected ">
+                <img class="icon" src="/hour-glass-svgrepo-com.svg" alt="">Timer
+            </div></a>
+
+        </div>
+    </nav>
+    <main>
+       
+        <div class="clock clock-timer flex ">
+            <div class="days block flex ">
+                <button class="arrow inc inc-day"><img src="/uparrow.svg" alt=""></button>
+                <p class="digit day-reading">00</p>
+                <p class="heading">DAYS</p>
+                <button class="arrow dec dec-day"><img src="/downarrow.svg" alt=""></button>
+            </div>
+            <div class="partition ">: </div>
+            <div class="hours block flex ">
+               <button class="arrow inc"><img src="/uparrow.svg" alt=""></button>
+               <p class="digit hour-reading">00</p>
+               <p class="heading">HOURS</p>
+               <button class="arrow dec"><img src="/downarrow.svg" alt=""></button>
+            </div>
+            <div class="partition">: </div>
+            <div class="minutes block flex ">
+                <button class="arrow inc"><img src="/uparrow.svg" alt=""></button>
+                <p class="digit minute-reading">00</p>
+                <p class="heading">MINUTES</p>
+                <button class="arrow dec"><img src="/downarrow.svg" alt=""></button>
+            </div>
+            <div class="partition"> : </div>
+            <div class="seconds block flex ">
+                <button class="arrow inc"><img src="/uparrow.svg" alt=""></button>
+                <p class="digit second-reading">00</p>
+                <p class="heading">SECONDS</p>
+                <button class="arrow dec"><img src="/downarrow.svg" alt=""></button>
+
+            </div>
+            <div class="buttons flex">
+                <button class=" flex start btn"><img src="/start.svg" alt=""></button>
+                <button class=" flex pause hide btn"><img src="/pause.svg" alt=""></button>
+                <button class=" flex restart btn"><img src="/restart.svg" alt=""></button>
+            </div>
+        </div>
+
+    </main>
+    <script src="script2.js"></script>
+</body>
+
+</html>

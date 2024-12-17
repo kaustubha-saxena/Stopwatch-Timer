@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    font-family: Lato;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: rgb(2, 172, 195);
+}
+
+nav {
+    height: 10vh;
+    background-color: rgb(0, 163, 184);
+}
+
+main {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.clock {
+    background-color: #fff;
+    height: 200px;
+    width: 800px;
+    border-radius: 7px;
+    gap: 10px;
+    margin: auto;
+    /* margin-top: 200px; */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 40px;
+
+}
+
+.flex {
+    display: flex;
+}
+
+.digit {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.menu {
+    width: 30px;
+    position: relative;
+    top: 25%;
+    left: 20px;
+}
+
+.partition {
+    font-size: 60px;
+    color: rgb(211, 211, 211);
+}
+
+.heading {
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: rgb(158, 158, 158);
+
+}
+
+.block {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 20px;
+    /* gap: 20px; */
+}
+
+.buttons {
+    width: 800px;
+    height: 50px;
+
+    position: absolute;
+    bottom: -20px;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+}
+
+.btn {
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    background-color:  rgb(179 221 231 / 54%);
+    /* background-image: linear-gradient(1deg, #183c84, #4192a9); */
+
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    box-shadow: inset rgb(211 234 255) 0px 0px 7px 3px;
+    /* box-shadow: rgb(220, 238, 255) 0px 0px 20px 3px; */
+    /* border: 6px solid #003e58; */
+}
+
+button img {
+    height: 50px;
+}
+
+.hide {
+    display: none;
+}
+
+.sidebar {
+    height: 90vh;
+    width: 300px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 10vh;
+    transition-property: transform;
+    transition-duration: 1000ms;
+    border-radius: 0px 10px 0px 0px;
+    z-index: 99;
+}
+
+.slide {
+    transform: translatex(-300px);
+}
+
+.option {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    font-size: 20px;
+    padding: 5px 20px;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+    /* border-radius: 10px; */
+}
+
+.selected {
+    /* border: 3px solid rgb(222, 222, 222); */
+    background-color: rgb(231, 231, 231);
+}
+
+.icon {
+    height: 30px;
+}
+
+.arrow {
+    background: none;
+    border: none;
+}
+
+.arrow img {
+    height: 30px;
+}
+
+.timmer {
+    padding-top: 20px;
+}
