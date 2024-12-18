@@ -167,3 +167,16 @@ button img {
 .timmer {
     padding-top: 20px;
 }
+.nav h2{
+   position: relative; 
+   left: 50px;
+}
+.nav{
+    align-items: center;
+    width: 100%;
+    position: relative;
+    top: 20px;
+}
+/* .disable-btn{
+    cursor:not-allowed;
+} */

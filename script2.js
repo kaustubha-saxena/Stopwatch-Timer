@@ -20,7 +20,10 @@ let is_timer = false;
 let clock_stopwatch = document.querySelector(".clock-stopwatch")
 let clock_timer = document.querySelector(".clock-timer")
 
-
+// if (sec == 0 && min == 0 && dy == 0 && hr == 0) {
+//     start.disabled = true;
+//     start.classList.add(".disable")
+// }
 
 inc.forEach(element => {
     element.addEventListener("click", () => {
@@ -39,59 +42,68 @@ dec.forEach(element => {
 
     })
 });
-update();
 
 
 console.log("clcik");
 start.addEventListener("click", () => {
+    // update();
 
-    start.classList.add("hide");
-    pause.classList.remove("hide");
-    sec = second.textContent
-    min = minute.textContent
-    hr = hour.textContent
-    dy = day.textContent
-    b = setInterval(() => {
-        sec -= 1;
+    console.log("sdf");
 
-        if (sec < 0) {
-            if (min == 0) {
-                if (hr == 0) {
-                    if (dy == 0) {
-                        console.log("finish");
-                        clearInterval(b);
+    if (second.textContent == 0 && minute.textContent == 0 && hour.textContent == 0 && day.textContent == 0) {
+
+    }
+    else {
+
+
+
+        start.classList.add("hide");
+        pause.classList.remove("hide");
+        sec = second.textContent
+        min = minute.textContent
+        hr = hour.textContent
+        dy = day.textContent
+        b = setInterval(() => {
+            sec -= 1;
+
+            if (sec < 0) {
+                if (min == 0) {
+                    if (hr == 0) {
+                        if (dy == 0) {
+                            console.log("finish");
+
+                            clearInterval(b);
+                            start.classList.remove("hide")
+                        }
+                        else {
+                            dy--;
+                            hr = 23;
+                            min = 59;
+                            sec = 59;
+                            update();
+                        }
                     }
                     else {
-                        dy--;
-                        hr = 23;
+                        hr--;
                         min = 59;
                         sec = 59;
                         update();
+
                     }
                 }
                 else {
-                    hr--;
-                    min = 59;
+                    min--;
                     sec = 59;
                     update();
-
                 }
             }
             else {
-                min--;
-                sec = 59;
                 update();
+
             }
-        }
-        else {
-            update();
-
-        }
-    }, 1000);
+        }, 1000);
+    }
 })
-
-
-
 
 pause.addEventListener("click", () => {
     is_Pause = true;
