@@ -73,7 +73,7 @@ start.addEventListener("click", () => {
                             console.log("finish");
 
                             clearInterval(b);
-                            start.classList.remove("hide")
+                            pause.classList.remove("hide")
                         }
                         else {
                             dy--;
